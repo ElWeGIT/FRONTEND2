@@ -1,4 +1,4 @@
-document.getElementsByClassName("main-title")[0].style.color = "red";
+document.getElementsByClassName("main-title")[0].style.color = "#5D852A";
 document.getElementById("main-action").onclick = function () {
     document.getElementById("cars").scrollIntoView({behavior: "smooth"});
 }
@@ -25,11 +25,11 @@ document.getElementById("price-action").onclick = function () {
 document.addEventListener("DOMContentLoaded", function () {
     let layer = document.querySelector('.price-image');
     document.addEventListener('mousemove', (event) => {
-        layer.style.transform = 'translate3d(' + ((event.clientX * 0.7) / 7) + 'px,' + ((event.clientY * 0.4) / 8) + 'px,0px)';
+        layer.style.transform = 'translate3d(' + ((event.clientX * 0.5) / 2) + 'px,' + ((event.clientY * 0.2) / 6) + 'px,0px)';
     });
 
     const elem = document.querySelector(".main");
     document.addEventListener('scroll', () => {
-        elem.style.backgroundPositionX = '0' + (0.3 * window.pageYOffset) + 'px';
+        elem.style.backgroundPositionX = '0' + (0.2 * window.pageYOffset) + 'px';
     })
 });
